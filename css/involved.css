@@ -1,0 +1,847 @@
+
+/*
+ Involved CSS 
+*/
+
+
+/* Involved - css
+-------------------------------------------------------------------------------------------*/
+#involved{
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; 
+}
+figure {
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+figure a {
+    transition: all 350ms cubic-bezier(0.77, 0, 0.175, 1);
+    -webkit-transition: all 350ms cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: all 350ms cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: all 350ms cubic-bezier(0.77, 0, 0.175, 1);
+    display: block;
+    line-height: 0;
+    background-color: #f2f0f0;
+}
+
+.scene-element > .grid-wrap {
+    padding-top: 5vh;
+}
+.scene_element {
+    -webkit-animation-duration: 0.35s;
+    animation-duration: 0.35s;
+    -webkit-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.scene_element--fadein {
+    animation: fadeIn 0.35s;
+    -moz-animation: fadeIn 0.35s;
+    -webkit-animation: fadeIn 0.35s;
+    -o-animation: fadeIn 0.35s;
+}
+.scene_element--fadeinup {
+    animation: fadeInUp 0.35s;
+    -moz-animation: fadeInUp 0.35s;
+    -webkit-animation: fadeInUp 0.35s;
+    -o-animation: fadeInUp 0.35s;
+}
+
+
+/*----------- shape left corner ---------------*/
+.shape-wrapper{
+  text-align:center;
+}
+
+.shape-wrapper svg{
+  width: 93%;
+  height:auto;
+	height: auto;
+    transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    position: absolute;
+    top: 40%;
+    right: -40%;
+    z-index: -1; 
+	
+}
+/* svg color change*/
+.shape-wrapper svg >path {
+    fill: #fa3535;
+    opacity: 0.9;
+}
+
+/*-------------------------------*/
+
+.join-heading {
+    position: relative;
+    margin-top: 2em;
+}
+ 
+.join-heading h2 {
+	font-size: 6em;
+    line-height: 1em;
+    margin-top: 0.25em;
+}
+.join-heading span {
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    .shape-wrapper  svg{
+        width: 93%;
+    	right: -40%;
+        top: 20vh;
+    }
+	#involved .big,
+    #join .big {
+        font-size: 1.15em;
+        line-height: 1.6em;
+    }
+    .join-heading {
+        position: relative;
+        margin-top: 2em;
+    }
+    .join-heading h2 {
+        font-size: 2.6em;
+        line-height: 1em;
+        margin-top: 0.25em;
+    }	
+	
+}
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .shape-wrapper svg {
+        width: 100%;
+        top: -20%;
+        right: -50%;
+        height: auto;
+    }
+
+    #join .row > div + div {
+        padding-top: 0px;
+    }
+
+    #join p {
+        font-size: 1.7em;
+        padding-right: 0;
+    }
+}
+
+
+@media only screen and (max-width: 47.9em) {
+ 
+    .join-heading h2 {
+        font-size: 6em;
+        line-height: 1em;
+        margin-top: 0.25em;
+    }
+
+}
+@media only screen and (min-width: 75em) {
+   .join-heading h2 {
+        font-size: 8.333em;
+        line-height: 1em;		
+    }
+
+    #join .row > div + div {
+        padding-top: 120px;
+    }
+
+}
+
+/* Form
+----------------------------------------------------------------------------------------*/
+/*====================================================
+02. background colors
+====================================================*/
+.bg-dark-1 { background-color:#1c1c1c;}
+.bg-yellow {background-color:#ffd94a;}
+.position-relative {
+	position:relative !important;
+}
+.position-absolute {
+	position: absolute !important;
+}
+.absolute-middle-center {
+	left: 50%; 
+	top: 50%; 
+	position: absolute; 
+	-ms-transform: translateX(-50%) translateY(-50%); 
+	-moz-transform: translateX(-50%) translateY(-50%); 
+	-webkit-transform: translateX(-50%) translateY(-50%); 
+	transform: translateX(-50%) translateY(-50%); 
+	-o-transform: translateX(-50%) translateY(-50%); 
+}
+.cover-background {
+	position: relative !important; 
+	background-size: cover !important; 
+	overflow: hidden !important; 
+	background-position: center !important; 
+	background-repeat: no-repeat !important;
+}
+.bg-about-img{
+	background-image:url(../img/bg_4.jpg);
+	visibility: hidden; 
+	animation-name: none; 
+	min-height:520px;
+}
+
+/*====================================================
+03. Input
+====================================================*/
+
+input,
+select {
+    font-size: 16px;
+    font-style: normal;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px 20px;
+    resize: both;
+    height: 150px;
+}
+
+/*====================================================
+08. Sections-contact
+====================================================*/
+
+/* Contact */
+
+.bg-contact {
+    background-color: #fff;
+    color: #0a0a0a;
+}
+
+.bg-contact .btn:hover,
+.bg-contact .btn-inverse {
+    border-color: #252525;
+    background-color: #252525;
+    color: #dedede;
+}
+
+.bg-contact input,
+.bg-contact textarea {
+    border-color: #252525;
+}
+
+.sections-block {
+    position: relative;
+    height: 100%;
+}
+
+.svm {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    font-size: 20px;
+}
+
+.section-info {
+    font-size: 20px;
+    margin: 30px 0;
+}
+
+.section-title {
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    position: relative;
+}
+
+.btn {
+    position: relative;
+    font-family: "Quicksand", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 0;
+    outline: none;
+    padding: 9px 15px;
+    background: transparent;
+    border-width: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    border-style: solid;
+    border-color: inherit;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    overflow: hidden;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.btn-inverse:hover {
+    cursor: pointer;
+    -webkit-animation: pulse .2s linear;
+    -moz-animation: pulse .2s linear;
+    -ms-animation: pulse .2s linear;
+    -o-animation: pulse .2s linear;
+    animation: pulse .2s linear;
+}
+
+/* Contact */
+
+.contact-form input[type="text"], .contact-form input[type="email"] {
+    width: 100%;
+}
+
+.contact-form input, .contact-form textarea, .contact-form select {
+    background: transparent;
+    outline: none;
+    font-family: inherit;
+    -webkit-appearance: none;
+    color: inherit;
+    border-width: 2px;
+    border-style: solid;
+    padding: 9px 20px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    height: auto;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.contact-form textarea {
+    float: left;
+    resize: none;
+    height: 140px;
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+.contact-form .input-error {
+    border-color: #f00; 
+}
+
+.contact-form .contact-notice {
+    font-size: 16px;
+}
+
+.contact-form .btn {
+    padding: 12px 15px;
+}
+
+.contact-form input::-webkit-input-placeholder,
+.contact-form textarea::-webkit-input-placeholder {
+    color: inherit;
+    font-family:"Montserrat", "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.contact-form :-moz-placeholder {
+    color: inherit;
+    opacity: 1;
+}
+
+.contact-form ::-moz-placeholder {
+    color: inherit;
+    opacity: 1;
+}
+
+.contact-form :-ms-input-placeholder {
+    color: inherit;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: inherit;
+}
+
+:-moz-placeholder {
+    color: inherit;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: inherit;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: inherit;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+/* header title */
+.bg-contact header h2 {
+	font-size: 2.5em;
+    line-height: 1.15em;
+	font-weight: 600;
+	margin: 2em 0 1.7em 0;
+}
+@media only screen and (max-width: 48em) {
+  .bg-contact header h2 {
+	font-size: 2em;
+    line-height: 1.15em;
+    margin: 0.25em 0 1.5em 0;
+   }
+}
+
+.section-title {
+  margin-bottom: 80px; }
+  @media (max-width: 1024px) {
+    .section-title {
+      margin-bottom: 30px; } }
+  .section-title h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 70px;
+    text-transform: capitalize;
+    position: relative;
+    line-height: 44px; }
+    @media (max-width: 1024px) {
+      .section-title h2 {
+        font-size: 40px;
+        margin-bottom: 30px; } }
+    @media (max-width: 1024px) {
+      .section-title h2 {
+        font-size: 30px; } }
+    .section-title h2:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -35px;
+      width: 10px;
+      height: 10px;
+      background: #e45447;
+      border-radius: 7px; }
+      @media (max-width: 1024px) {
+        .section-title h2:before {
+          bottom: -15px; } }
+    .section-title h2:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -31px;
+      width: 100px;
+      height: 2px;
+      background: #e45447; }
+      @media (max-width: 1024px) {
+        .section-title h2:after {
+          bottom: -11px; } }
+/*====================================================
+6. Responsive 
+====================================================*/
+
+@media only screen and (max-width: 1200px) {
+
+
+}
+
+@media only screen and (max-width: 992px) {
+
+
+    .svm {
+        display: block;
+    }
+
+    .section-info {
+        text-align: center !important;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .bg-contact {
+      padding: 5em 0; 
+	} 
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  }
+
+@media only screen and (max-width: 320px) {
+
+
+	.contact-form input, .contact-form textarea, .contact-form select {
+		padding: 9px 20px;
+		height: auto;
+		font-size: 14px;
+		letter-spacing: 1px;
+
+	}
+	.contact-form button{
+		
+	}
+}
+
+
+/*====================================================
+7. Plan
+====================================================*/
+
+.section-plan{
+	padding: 2.5em 0;	
+}
+/*===== All SECTION TITLE Style =====*/
+
+.section-title .line {
+	background:#ff264a;
+  	width: 150px;
+  	height: 5px;
+  	margin-bottom: 10px !important; }
+
+.section-title .title {
+	font-size: 38px;
+  	font-weight: 700;
+  	line-height: 42px; 
+}
+.section-title .title span {
+    font-weight: 400;
+    display: contents; 
+}
+
+.sub-title {
+    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-weight: 800;
+	font-size: 3em;
+    margin: 0;
+    line-height: 1.1em;
+}
+
+
+@media (max-width: 767px) {
+	
+	.sub-title { font-size: 3em; }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .section-title .title {
+    		font-size: 3em;
+	} 
+}
+  
+@media only screen and (max-width: 479px) {
+    .section-content {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        padding: 16px;
+    }
+}	
+@media only screen and (max-width: 320px) {
+
+    .section-title .title{
+        font-size: 1.57em;
+		line-height:1.1;
+    }	
+}
+/*====================================================
+8. What we do
+====================================================*/
+
+.section-what-we-do{
+	padding: 2.5em 0;
+}
+.section-content{
+    margin-top: 88px;
+    padding: 68px;
+    border-top: 4px solid #000;
+    background-color: #020816;
+}
+.section-what-we-do h1{
+	color: #fff;
+	opacity:1;
+	font-size: 2.5em;
+	font-weight: 800;
+	margin: auto 0 30px 0;
+}
+.list-style {
+  width: 14px;
+  height: 14px; }
+  
+.unorderlist-text{ 
+	font-size: 1.2em;
+	color:#fff;
+}  
+
+
+/* ul style */
+.unordered-list li {
+	position: relative;
+  	padding-left: 30px;
+  	line-height: 1.82em !important; 
+}
+.unordered-list li:before {
+	content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 3px solid #ff264a;
+    background: transparent;
+    top: 4px;
+    left: 0;
+    border-radius: 50%; 
+}
+/* ol style */
+.ordered-list {
+	margin-left: 30px; 
+}
+.ordered-list li {
+	list-style-type: decimal-leading-zero;
+    color: #39cfca;
+    font-weight: 500;
+    line-height: 1.82em !important; 
+}
+.ordered-list li span {
+	font-weight: 300;
+    color: #ffffff; 
+}
+
+
+/*====================================================
+8. Responsive  - plan
+====================================================*/
+
+@media only screen and (max-width: 1200px) {
+	.section-what-we-do h1{
+		font-size: 1.5em;
+	}
+	
+	.section-content .list:first-child { 
+		margin-bottom: 50px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+
+
+}
+@media only screen and (min-width: 767px) {
+
+	.section-content .list { 
+		width: 50%;
+		margin-bottom: 20px;
+	}
+
+}
+
+
+@media only screen and (max-width: 7687x) {
+	.section-what-we-do h1{
+		font-size: 1.5em;
+		font-weight: 700;
+	}	
+
+	.section-what-we-do{
+		padding: 2.5em 0 0 0; 
+	}
+    .section-content {
+        margin-top: 88px;
+        margin-bottom: 88px;
+        padding: 4px;
+    }	
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  }
+
+@media only screen and (max-width: 320px) {
+	.section-what-we-do h1{
+		font-size: 1.2em;
+		font-weight: 700;
+	}	
+
+	.section-what-we-do{
+		padding: 2.5em 0 0 0; 
+	}
+    .section-content {
+        margin-top: 88px;
+        margin-bottom: 88px;
+        padding: 40px 2px 40px 2px;
+    }
+	.unorderlist-text{ 
+		font-size: 1em;
+		color:#fff;
+	}  
+
+}
+
+
+
+
+/*  kachin cross - shape
+------------------------------------------------------------------------------*/
+ .shape {
+    position: absolute;
+}
+
+
+.shape-one {
+    top: 0;
+    left: 0; 
+}
+.shape-two {
+	top: 25px;
+    left: 31%; 
+}	
+
+.shape-three {
+    left: 70px;
+    bottom: 130px; 
+}
+.shape-four{
+    left: 14.3%;
+    bottom: -90px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%); 
+}
+.shape-five{
+    left: 30%;
+    top: -130px;
+ 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.shape-one {
+        width: 230px; 
+	} 	
+	.shape-two {
+        left: 40%; 
+	} 
+	.shape-four {
+        width: 260px; 
+	} 	
+	.shape-five {
+        width: 260px; 
+		left: 20%;
+	} 		
+}
+@media (max-width: 767px) {
+	.shape-one {
+    	width: 180px; 
+	} 	
+	.shape-two {
+        left: 60%;
+        width: 60px; 
+	} 
+	.shape-three {
+        width: 90px;
+        bottom: 200px; 
+	}
+	.shape-four {
+        bottom: -60px;
+        width: 210px; 
+	} 
+	.shape-five {
+        bottom: -60px;
+        width: 210px; 
+	} 	
+ 	
+}
+@media (max-width: 320px) {
+	.shape-five {
+    	left: 15%;
+    	top: -93px;
+        width: 150px; 
+	} 
+ 	
+}
+		
+		
+/*===== All Animation Title Style =====*/
+.animation-one {
+  -webkit-animation: rotate 15s linear infinite;
+  -moz-animation: rotate 15s linear infinite;
+  -o-animation: rotate 15s linear infinite;
+  animation: rotate 15s linear infinite; }
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+		
+
+/*
+.block{
+  width:100%;
+  min-height:500px;
+  color:#f00;
+  text-align:center;
+  background:#000 url(img/intro-bg.jpg) no-repeat 0 0;
+  background-size:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  
+  border-bottom-left-radius:70%;
+    border-bottom-right-radius:70%;
+}
+*/
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+/* Involved - css end
+-------------------------------------------------------------------------------------------*/
+
+
+
